@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    padding: 60px;
+    margin: 50px 100px;
+    font-family: helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(72, 197, 242);
+}
+
+.imagem__curriculo {
+    margin: 0px 980px;
+    padding: 20px;
+
+}
