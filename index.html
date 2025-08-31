@@ -1,18 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header></header>
-    <main>
-        <h1>Meu Curriculo</h1>
-        <p></p>
-    </main>
-    <img class="imagem__curriculo" src="minha-foto.jpg" alt="minha foto" style="width: 250px; height: 300px;">
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Valdenicio - Desenvolvedor Frontend</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#">
+        <h1 class="logo">JV</h1>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#projetos"> Meus Projetos </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="informacoes">
+        <h1>Olá! Sou José Valdenicio</h1>
+        <p>
+          Com foco em Frontend aprimorando habilidades em
+          <strong>HTML CSS, JavaScript e Typescript,</strong> além de frameworks
+          modernos como <strong>React,</strong> estou pronto para agregar valor
+          a uma equipe de desenvolvimento. Minha missão é criar interfaces
+          intuitivas e experiências envolventes, sempre alinhadas às melhores
+          práticas de usabilidade e performance.
+        </p>
+        <p>
+          explorando também <strong>Node.js, Next.js</strong> para
+          expandir minhas competências.
+        </p>
+
+        <ul class="redes-socias">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/josé-valdenicio-dev"
+              title="Ir para o Linkedin"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://wa.me/5581993851455"
+              title="Enviar mensagem no whatsApp"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/valdenicio222"
+              title="Ir para o Github"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/novynf1"
+              title="Ir para o Instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-foto">
+        <img
+          src="./src/imagens/profile-pic.png"
+          alt="foto portfolio do valdenicio"
+        />
+      </div>
+    </section>
+
+    <section class="icons-container">
+      <ul class="icons-lista">
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          />
+          <h4>HTML 5</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          />
+          <h4>CSS 3</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+          <h4>JavaScript</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          />
+          <h4>React</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          />
+          <h4>Typescript</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+          />
+          <h4>Git</h4>
+        </li>
+        <li>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          />
+          <h4>Github</h4>
+        </li>
+      </ul>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2 class="titulo-projetos">Meus Projetos</h2>
+
+      <div class="container-projetos">
+        <div class="projeto ativo">
+          <a
+            href="https://one-piece-g8567upp3-valdenicios-projects.vercel.app/"
+            target="_blank"
+          >
+            <img src="./src/imagens/one-piec.png" alt="projeto one piece" />
+            <h3>One Piece</h3>
+
+            <div class="informacoes-projetos">
+              <p>
+                <strong>Projeto feito usando HTML, CSS e javaScript,</strong>
+              </p>
+              <p>onde apresenta os personagens da obra One Peace.</p>
+              <p><strong>Ver na vercel</strong></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a
+            href="https://valdenicio222.github.io/jogo-do-numero/"
+            target="_blank"
+          >
+            <img src="./src/imagens/jogo.png" alt="jogo do numero" />
+            <h3>Número Secreto</h3>
+
+            <div class="informacoes-projetos">
+              <p>
+                <strong>Projeto feito usando HTML, CSS e javaScript,</strong>
+              </p>
+              <p>onde o usuario deve encontrar qual o numero secreto.</p>
+              <p><strong>Ver no GitHub Pages</strong></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a href="https://barbearia-topaz-ten.vercel.app/" target="_blank">
+            <img src="./src/imagens/barbearia.png" alt="Barbearia" />
+            <h3>Barbearia</h3>
+
+            <div class="informacoes-projetos">
+              <p><strong>Projeto feito usando HTML, CSS, SASS,</strong></p>
+              <p>
+                onde apresenta uma landing page de barbearia usando biblioteca
+                AOS
+              </p>
+              <p><strong>Ver na vercel</strong></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a
+            href="https://fokus-qhoy7f5ss-valdenicios-projects.vercel.app/"
+            target="_blank"
+          >
+            <img src="./src/imagens/fokus.png" alt="foto do projeto" />
+            <h3>fokus</h3>
+
+            <div class="informacoes-projetos">
+              <p>
+                <strong>Projeto feito usando HTML CSS e javaScript,</strong>
+              </p>
+              <p>
+                onde e usado a Técnica Promodoro, para que o usuario tenha
+                melhor performance e foco
+              </p>
+              <p><strong>Ver na vercel</strong></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://valdenicio222.github.io/BOX-MIDI/" target="_blank">
+            <img src="./src/imagens/boxMidi.png" alt="capa do projeto" />
+            <h3>BOX MIDI</h3>
+
+            <div class="informacoes-projetos">
+              <p>
+                <strong>Projeto feito usando HTML, CSS e javaScript,</strong>
+              </p>
+              <p>onde apressenta uma caixa com sons de bateria.</p>
+              <p><strong>Ver no GitHub Pages</strong></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="btn-mostrar-projetos">Mostrar Mais</button>
+    </section>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
