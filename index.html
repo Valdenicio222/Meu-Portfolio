@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>José Valdenicio - Desenvolvedor Frontend</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -32,9 +34,13 @@
     <link rel="stylesheet" href="./src/css/responsivo.css" />
   </head>
   <body>
-    <header class="cabecalho">
-      <a href="#">
-        <h1 class="logo">JV</h1>
+    <header class="cabecalho" data-aos="fade-down" data-aos-delay="900">
+      <a
+        class="curriculo"
+        href="https://docs.google.com/document/d/1pn5Nn0giOU6f3ISTzWXXaEdOScUPRT6N/edit?usp=sharing&ouid=109438354332084945769&rtpof=true&sd=true"
+        target="_blank"
+      >
+        Curriculo
       </a>
       <nav class="menu">
         <ul>
@@ -46,7 +52,7 @@
     </header>
 
     <section class="home">
-      <div class="informacoes">
+      <div class="informacoes" data-aos="fade-right">
         <h1>Olá! Sou José Valdenicio</h1>
         <p>
           Com foco em Frontend aprimorando habilidades em
@@ -57,8 +63,8 @@
           práticas de usabilidade e performance.
         </p>
         <p>
-          explorando também <strong>Node.js, Next.js</strong> para
-          expandir minhas competências.
+          explorando também <strong>Node.js, Next.js</strong> para expandir
+          minhas competências.
         </p>
 
         <ul class="redes-socias">
@@ -104,7 +110,7 @@
         </ul>
       </div>
 
-      <div class="container-foto">
+      <div class="container-foto" data-aos="fade-left">
         <img
           src="./src/imagens/profile-pic.png"
           alt="foto portfolio do valdenicio"
@@ -114,43 +120,43 @@
 
     <section class="icons-container">
       <ul class="icons-lista">
-        <li>
+        <li data-aos="fade-up" data-aos-delay="200">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
           />
           <h4>HTML 5</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="400">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
           />
           <h4>CSS 3</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="600">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
           />
           <h4>JavaScript</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="800">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
           />
           <h4>React</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="1000">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
           />
           <h4>Typescript</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="1200">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
           />
           <h4>Git</h4>
         </li>
-        <li>
+        <li data-aos="fade-up" data-aos-delay="1400">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
           />
@@ -162,7 +168,7 @@
     <section class="projetos" id="projetos">
       <h2 class="titulo-projetos">Meus Projetos</h2>
 
-      <div class="container-projetos">
+      <div class="container-projetos" data-aos="fade-up">
         <div class="projeto ativo">
           <a
             href="https://one-piece-g8567upp3-valdenicios-projects.vercel.app/"
@@ -253,6 +259,14 @@
       </div>
       <button class="btn-mostrar-projetos">Mostrar Mais</button>
     </section>
+
     <script src="./src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
   </body>
 </html>
